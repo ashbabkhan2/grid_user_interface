@@ -101,7 +101,17 @@ ul li a{
 ul li a:hover{
     color: rgb(238, 14, 14);
 }
-@media all and (max-width:380px){
+@media all and (max-width:1200px){
+    .div3{
+        font-size:35px;
+    }
+}
+@media all and (max-width:774px){
+    .div3{
+        font-size:27px;
+    }
+}
+@media all and (max-width:700px){
   main{
       display: block;
       margin: 30px 0px;
