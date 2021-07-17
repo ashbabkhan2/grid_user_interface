@@ -28,6 +28,7 @@ ul li a{
     font-size: 20px;
     font-weight: bold;
     color: grey;
+    transition: color 0.5s;
 }
 .carts{
     display: none;
@@ -84,6 +85,10 @@ ul li a{
   border-radius: 15px;
   box-shadow: 1px 1px 20px 2px rgba(0,0,0,0.4);
 }
+.div6:hover{
+    transform: scale(1.1);
+}
+    
 .div6 h2{
     display: block;
     margin-top: 18px;
@@ -93,6 +98,9 @@ ul li a{
 .div8{
     display: none;
 }
+ul li a:hover{
+    color: rgb(238, 14, 14);
+}
 @media all and (max-width:380px){
   main{
       display: block;
@@ -101,6 +109,9 @@ ul li a{
       margin-left: auto;
       margin-right: auto;
 
+  }
+  .div6:hover{
+      transform: scale(1);
   }
   .div8{
       display: block;
