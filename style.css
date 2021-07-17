@@ -108,7 +108,7 @@ ul li a{
   }
   .div8 p{
     color: grey;
-    font-size: 18px;
+    font-size: 158px;
     line-height: 1.4;
     letter-spacing: 0.4px;
 }
@@ -127,6 +127,7 @@ ul li a{
  /* .div2{
      display:none;
  } */
+ 
  #fabars{
      display: inline-block;
  }    
@@ -172,5 +173,11 @@ ul li a{
  }
  .div7{
      display: none;
+ }
+ .div2 ul li a{
+     font-size: 17px;
+ }
+ .div6 h2{
+     font-size: 19px;
  }
 }
