@@ -6,11 +6,13 @@
   box-sizing: border-box;
   /* border: 1px solid black; */
 }
+
 main{
   display:grid;
   width:93%;
-  margin:60px auto;
+  margin:0px auto;
   gap: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   grid-template-rows:6rem 16rem;
   grid-template-columns: repeat(5,1fr);
@@ -99,7 +101,10 @@ ul li a{
     display: none;
 }
 ul li a:hover{
-    color: rgb(238, 14, 14);
+    color: rgb(238, 14, 14)
+}
+.hamburger{
+    display: none;
 }
 @media all and (max-width:1200px){
     .div3{
@@ -107,21 +112,108 @@ ul li a:hover{
     }
 }
 @media all and (max-width:774px){
-    .div3{
+ ul{
+     padding-top: 0px;
+ }
+ .b_button{
+   text-align: end; 
+   margin: 40px 40px;  
+ }  
+ .b_button i{
+     font-size: 24px;
+     cursor: pointer;
+     text-shadow: 1px 1px rgba(255,255,255,0.2);
+ }
+
+  .div3{
         font-size:27px;
     }
-}
-@media all and (max-width:700px){
-  main{
+   .back{
+       position: fixed;
+       width: 100%;
+       display: none;
+       top: 0;
+       background-image: linear-gradient(45deg,rgba(245, 0, 0, 0.5),rgba(0,0,255,0.5));
+       left: 0;
+       z-index: 100;
+       height: 100vh;
+   }
+    .div2{
+        display: none;
+    }
+    main{
+        width: 90%;
+    }
+    .res-div2{
+        margin: 0;
+        display: none;
+        width: 80%;
+        position:fixed;
+        top: 0;
+        z-index: 200;
+        left: 0;
+        padding: 0;
+        background-image: linear-gradient(45deg,rgba(255,0,0,0.9),rgba(0,0,255,0.9));
+        height: 100vh;
+    }
+    .res-div2 ul li{
+        margin: 5px 0px;
+        padding: 0;
+    }
+    .res-div2 ul li a{
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    .div6:hover{
+       transform: none;
+    }
+    .ul1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        margin-top: 2%;
+        height: 70%;
+    }
+    .hamburger{
+        width: 40px;
+        height: 19px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin: 5px 5px;
+        background: transparent;
+        justify-content: space-around;
+        cursor: pointer;
+        position: relative;
+        z-index: 110;
+
+    }
+    .line-1{
+        display: block;
+        height: 2px;
+        background-color: red;
+    }
+    .a{
+        width: 26px;
+    }
+    .b{
+        width: 20px;
+    }
+    .c{
+        width: 33px;
+    }
+    .ul1 li a{
+        text-shadow: 1px 0px rgba(255,255,255,0.3);
+    }
+    main{
       display: block;
-      margin: 30px 0px;
-      width: 85%;
       margin-left: auto;
       margin-right: auto;
 
   }
   .div6:hover{
-      transform: scale(1);
+      transform: none;
   }
   .div8{
       display: block;
@@ -159,7 +251,7 @@ ul li a:hover{
  .div1{
     font-size: 20px;
     text-align: center;
-    margin-top: -20px;
+    margin-top: -25px;
  }
  span{
      display: none;
@@ -167,7 +259,7 @@ ul li a:hover{
  .carts{
      display: block;
      text-align: end;
-     margin-top: -20px;
+     margin-top: -18px;
  }
  .div2 ul li{
      padding: 5px;
