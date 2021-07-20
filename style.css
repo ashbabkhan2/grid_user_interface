@@ -106,6 +106,12 @@ ul li a:hover{
 .hamburger{
     display: none;
 }
+.back{
+    display: none;
+}
+.res-div2{
+    display: none;
+}
 @media all and (max-width:1200px){
     .div3{
         font-size:35px;
